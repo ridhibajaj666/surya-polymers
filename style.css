@@ -1,0 +1,553 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2e94d0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height:110px;
+    width: 100%;
+    background: white;
+    color: rgb(0, 96, 165);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: inline-block;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header img{
+    margin-top: -70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    margin-left: auto; 
+}
+nav {
+    margin-top: -8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 27px;
+    width: 100%;
+    padding: 1px;
+    
+}
+.header-text{
+   flex-grow: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(0, 96, 165);
+    margin-left: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    margin-left: 155px;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.1rem;
+    margin-top: -40px;
+}
+
+nav button {
+    background-color: white;
+    color: rgb(0, 96, 165);
+    font-size: 1rem;
+    padding: px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+nav button:hover {
+    transform: scale(1.05);
+    /* background-color: #a2d0f4; */
+    border: 1px solid white;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    header img {
+        width: 100px;
+        height: 100px;
+        margin-top: -41px;
+    }
+}
+@media (max-width: 1000px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+        height: 100px;
+        padding: 15px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 80px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-left: 100px;
+        margin-top: -25px;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    nav button {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        text-align: left;
+        height: 100px;
+        padding: 15px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 80px;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-left: 100px;
+        margin-top: -25px;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    nav button {
+        width: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    nav button {
+        width: 50%;
+    }
+}
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    nav button {
+        width: 55%;
+    }
+}
+#about, #home, #products {
+    padding: 10px;
+    background-color: white;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1100px;
+    box-shadow: 13px 12px 6px rgba(0, 0, 0, 0.2);
+}
+#about a{
+    text-decoration: none;
+}
+#about button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 2px; 
+    padding: 2px 4px; 
+    border: rgb(0, 96, 165) solid 1.8px;
+    border-radius: 4px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 80%;
+
+}
+#about button:hover {
+    transform: scale(1.05); 
+    background-color: rgb(0, 96, 165);
+    border: 1px solid rgba(255, 255, 255, 0.7); 
+    cursor: pointer; 
+    margin: 2px; 
+    padding: 2px 4px; 
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+#about h2{
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+#about p {
+    margin-left: 4.8px;
+    margin-top: 2px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+
+#about img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 10px auto;
+}
+
+#products h2{
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+#products {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+
+.product-card img{
+    width: 100%;
+    max-width: 360px;
+    height: 350px;
+    margin: 40px 83px;
+    display: inline-block;
+    border: 3px solid #323546;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#products img:hover{
+    border: 4px solid #000000;
+    cursor: pointer;
+}
+#products a{
+    text-decoration: none;
+}
+#products button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 2px; 
+    padding: 2px 4px; 
+    border: rgb(0, 96, 165) solid 1.8px;
+    border-radius: 4px;
+    display: block;
+    margin-top: 10px;
+   
+
+}
+#products button:hover {
+    transform: scale(1.05); 
+    background-color: rgb(0, 96, 165);
+    border: 1px solid rgba(255, 255, 255, 0.7); 
+    cursor: pointer; 
+    margin: 2px; 
+    padding: 2px 4px; 
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 10px;
+   
+}
+@media (max-width: 1000px) {
+    #products {
+        flex-direction: column;
+        align-items: center;
+    }
+    #products img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    #products button {
+        width: 40%;
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #products img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    #products button {
+        width: 40%;
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    #products img {
+        width: 60%;
+        max-width: 350px;
+        height: auto;
+    }
+    #products button {
+        width: 40%;
+        margin-left: 50%;
+    }
+}
+@media (max-width: 1500px) {
+    #products img {
+        width: 60%;
+        max-width: 350px;
+        height: auto;
+    }
+    #products button {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+@media (max-width: 1000px) {
+    #products img {
+        width: 60%;
+        max-width: 350px;
+        height: auto;
+    }
+    #products button {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+#contact{
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.contact-card {
+    background: white;
+    width: 320px;
+    padding: 20px;    
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 8 10 14px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 30%;
+    max-width: 1100px;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.location {
+    color: rgb(6, 96, 169);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.icon img:hover {
+    transform: scale(1.1);
+}
+.company-name {
+    color: rgb(6, 96, 169);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.address {
+    color: #333;
+    font-size: 1rem;
+    margin-left: 0.1px;
+    width: 100%;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+   
+}
+.contact-info a:hover{
+    color: rgb(3, 16, 255);
+}
+
+.phone p {
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1rem;
+    
+
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        width: 90%;
+        padding: 20px;
+    }
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 1000px) {
+    .contact-card {
+        width: 90%;
+        padding: 20px;
+    }
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    #about, #home {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav button {
+        width: 100%;
+    }
+    #about, #home {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+    p {
+        margin-left: 10px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    nav button {
+        width: 100%;
+        padding: 10px;
+    }
+    #about, #home {
+        width: 100%;
+        padding: 10px;
+    }
+}
